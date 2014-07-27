@@ -1,0 +1,12 @@
+# Site settings
+title: Adam James
+email: adam@adamjames.me
+description: "Still a better TLD than .blog"
+baseurl: ""
+url: "http://adamjames.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 4
+safe: false

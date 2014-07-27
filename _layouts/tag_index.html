@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<h2 class="post_title">{{page.title}}</h2>
+<ul>
+  <ul id="archive">
+  {% for post in site.posts %}
+  {% for tag in post.tags %}
+  {% if tag == page.tag %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: '%d %b<span class="year"> %Y</span>' }}
+      </time>
+
+      <div class="description">
+        <a href="{{ post.url }}">
+          {% if post.display_title %}
+            {{ post.display_title }}
+          {% else %}
+            {{ post.title }}
+          {% endif %}
+        </a>
+
+        <p class="excerpt">
+            {{ post.content | split: '<!-- more -->' | first }}
+        </p>
+      </div>
+    </li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>

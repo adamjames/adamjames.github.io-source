@@ -1,0 +1,48 @@
+---
+layout: default
+title: adamjames.github.io
+---
+
+<div id="home">
+  <ul id="archive">
+    {% for post in paginator.posts %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: '%d %b<span class="year"> %Y</span>' }}
+      </time>
+
+      <div class="description">
+        <a href="{{ post.url }}">
+          {% if post.short-title %}
+            {{ post.short-title }}
+          {% else %}
+            {{ post.title }}
+          {% endif %}
+        </a>
+
+        <p class="excerpt">
+            {% if post.description %}
+              {{ post.description | split: '<!-- more -->' | first }}
+            {% else %}
+              {{ post.content | split: '<!-- more -->' | first }}
+            {% endif %}
+        </p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  
+  <div id="pagination">
+    {% if paginator.page > 2 %}
+      <a href="/page{{ paginator.previous_page }}">&laquo; previous</a>
+    {% endif %}   
+    
+    {% if paginator.page == 2 %}
+      <a href="/">&laquo; index</a>
+    {% endif %}
+
+    {% if paginator.page < paginator.total_pages %}
+    <a href="/page{{ paginator.next_page }}">next &raquo;</a>
+    {% endif %}
+  </div>
+</div>
