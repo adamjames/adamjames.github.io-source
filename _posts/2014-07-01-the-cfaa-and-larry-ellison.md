@@ -5,7 +5,7 @@ layout: post
 tags: 
 - diary
 ---
-In the excellent documentary and biography *The Internet's Own Boy*, it is explained that Aaron's suicide prompted some attempts at reform of the Computer Fraud and Abuse Act of 1986 (the CFAA) - the primary law used against Aaron to build up the extensive list of charges levelled against him. I did some further reading around this, finding the following:
+In the excellent documentary and biography *The Internet's Own Boy*, it is explained that Aaron's suicide prompted some attempts at reform of the Computer Fraud and Abuse Act of 1986 (the CFAA) - the primary law used to build up the extensive list of charges levelled against him. I did some further reading around this, finding the following:
 
 > In the wake of the prosecution and subsequent suicide of Aaron Swartz, lawmakers have proposed to amend the Computer Fraud and Abuse Act. Representative Zoe Lofgren has drafted a bill that would "help prevent what happened to Aaron from happening to other Internet users". Aaron's Law (H.R. 2454, S. 1196) would exclude terms of service violations from the 1984 Computer Fraud and Abuse Act and from the wire fraud statute, despite the fact that Swartz was not prosecuted based on Terms of Service violations. [...] **As of May 2014, Aaron's Law was stalled in committee, reportedly due to technology company Oracle's financial interests.**
 
