@@ -29,7 +29,7 @@ Publishing to Github Pages
 
 Because this Jekyll blog uses third-party plugins, you'll need to generate the static content (which ends up in the `_site` subdirectory by default) and then copy it into your `{username}.github.com` repository, commit it and push it.
 
-Once you've built your static content, copy it from the VM's `/vagrant folder` into your Github Pages repository folder, commit the new content and push it to Github.
+Once you've built your static content, copy it from the VM's `/vagrant folder` into your Github Pages repository folder, commit the new content and push it to Github. Don't forget to include a **`.nojekyll`** file in the root of the repository so that the content is served as-is.
 
 It is entirely possible for you to use Git from within the VM (via `vagrant ssh`) to publish to Github, but you'll need to set this up yourself.
 
