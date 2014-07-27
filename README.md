@@ -1,10 +1,11 @@
 adamjames.github.io
 ====================
 
-These are the **Jekyll** and **HTML/Markdown source** files used to generate the content served at adamjames.github.io. They are stored seperately to the processed blog content in order to make forking and management easier.
+These are the **Jekyll** and **HTML/Markdown source** files used to generate the content served at <a href='http://adamjames.github.io'>**adamjames.github.io**</a>. They are stored seperately to the processed blog content in order to make forking and management easier.
 
 A **Vagrantfile** for the virtual machine I use to build the blog is also included. You may wish to change it before you begin. Jekyll content is made available at <a href="http://localhost:8124">`http://localhost:8124`</a> by default. 
 
+You'll need to modify the content of `_config.yml`, `about.md`, `404.md`, and most of the files in the `layouts` folder to suit yourself. In particular, you'll want to replace my name with yours, remove the Disqus embed and footer content, and update the About Me and 404 pages as appropriate.
 
 Getting up and running
 ----------------------
@@ -12,7 +13,6 @@ Getting up and running
 Run `vagrant up` followed by `vagrant rsync-auto` in another Terminal tab once the machine is up and running to sync modified content back to the VM for processing.
 
 SSH into the vagrant machine using `vagrant ssh`, then `cd /vagrant` and finally `jekyll serve --watch`. Jekyll should build the content and make it available at `http://localhost:8124`.
-
 
 Plugins and Rsync
 -----------------
@@ -27,7 +27,7 @@ As soon as I have the time to work out a solution for this I'll update the repos
 Publishing to Github Pages
 --------------------------
 
-Because this Jekyll blog uses plugins, you'll need to generate the static content (which ends up in the `_site` subdirectory by default) and then copy it into your `{username}.github.com` repository, commit it and push it.
+Because this Jekyll blog uses third-party plugins, you'll need to generate the static content (which ends up in the `_site` subdirectory by default) and then copy it into your `{username}.github.com` repository, commit it and push it.
 
 Once you've built your static content, copy it from the VM's `/vagrant folder` into your Github Pages repository folder, commit the new content and push it to Github.
 
