@@ -35,7 +35,7 @@ It is entirely possible for you to use Git from within the VM (via `vagrant ssh`
 
 If you're using `rsync-auto` to synchronise content between the Vagrant machine and the host, **do not** rely on the content of the `_site` folder on the host, as it is not kept up to date for the reasons explained above.
 
-Credits and License
+Credits and Licence
 -------------------
 
 The theme is based on great CSS by <a href='https://github.com/hans/hans.github.com'>Hans Engel</a>. 
