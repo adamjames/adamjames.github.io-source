@@ -14,15 +14,19 @@ layout: default
 
       <div class="description">
         <a href="{{ post.url }}">
-          {% if post.display_title %}
-            {{ post.display_title }}
+          {% if post.short-title %}
+            {{ post.short-title }}
           {% else %}
             {{ post.title }}
           {% endif %}
         </a>
 
         <p class="excerpt">
-            {{ post.content | split: '<!-- more -->' | first }}
+            {% if post.description %}
+              {{ post.description | split: '<!-- more -->' | first }}
+            {% else %}
+              {{ post.content | split: '<!-- more -->' | first }}
+            {% endif %}
         </p>
       </div>
     </li>
