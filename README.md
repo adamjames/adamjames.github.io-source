@@ -1,6 +1,11 @@
 adamjames.github.io
 ====================
 
+--------------------
+This repository is no longer used and has been deprecated in favour of the standard Github-compiled approach. It remains here for reference purposes.
+--------------------
+
+
 These are the **Jekyll** and **HTML/Markdown source** files used to generate the content served at <a href='http://adamjames.github.io'>**adamjames.github.io**</a>. They are stored seperately to the processed blog content in order to make forking and management easier.
 
 A **Vagrantfile** for the virtual machine I use to build the blog is also included. You may wish to change it before you begin. Jekyll content is made available at <a href="http://localhost:8124">`http://localhost:8124`</a> by default. 
